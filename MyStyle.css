@@ -20,6 +20,12 @@ font-family: Arial, Helvetica, sans-serif;
 .box1:hover{
     background-color:blue;
 }
+
+h1{
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
 /*second div*/
 .box2{
     height: 100px;
