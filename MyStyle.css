@@ -1,0 +1,38 @@
+
+/*first div*/
+body{
+font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.box1{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+}
+
+.box1{
+    transition-property: background-color;
+    transition-duration:4s;
+}
+
+.box1:hover{
+    background-color:blue;
+}
+/*second div*/
+.box2{
+    height: 100px;
+    width: 100px;
+    background-color:green;
+}
+
+.box2{
+    transition-property:  border-radius,background-color;
+    transition-duration:4s;
+}
+
+.box2:hover{
+    background-color:blueviolet;
+    border-radius: 50%;
+}
+
