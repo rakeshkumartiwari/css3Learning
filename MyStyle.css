@@ -70,7 +70,6 @@ ul{
 }
 
 ul li{
-   
     list-style-type: none;
     text-align: center;
     padding: 5px;
@@ -82,19 +81,14 @@ ul li{
 
 li:nth-child(3n-1){
     background-color: #FFD4A8;
-
 }
 
 li:nth-child(3n-2){
-    
     background-color: #FFEDDB;
-
 }
-
  li:hover{
 background-color: brown;
 color:white;
-
 }
 
 
