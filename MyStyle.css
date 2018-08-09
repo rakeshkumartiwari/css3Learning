@@ -4,7 +4,15 @@ body{
 font-family: Arial, Helvetica, sans-serif;
 }
 
-
+h1{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-shadow: 0.16em 0.16em 0.16em red;
+}
+h4{
+    text-shadow: 0.16em 0.16em 0.16em white;
+}
 .box1{
     height: 200px;
     width: 200px;
@@ -21,11 +29,7 @@ font-family: Arial, Helvetica, sans-serif;
     background-color:blue;
 }
 
-h1{
-    background-color: black;
-    color: white;
-    padding: 10px;
-}
+
 /*second div*/
 .box2{
     height: 200px;
@@ -51,4 +55,47 @@ h1{
     background-color:blueviolet;
     border-radius: 50%;
 }
+
+
+.divUlItem{
+    width: 500px;
+}
+
+
+ul{
+    
+    column-count: 3;
+    column-gap: 0;
+
+}
+
+ul li{
+   
+    list-style-type: none;
+    text-align: center;
+    padding: 5px;
+}
+
+ li:nth-child(3n){
+    background-color:#FFBB77;
+}
+
+li:nth-child(3n-1){
+    background-color: #FFD4A8;
+
+}
+
+li:nth-child(3n-2){
+    
+    background-color: #FFEDDB;
+
+}
+
+ li:hover{
+background-color: brown;
+color:white;
+
+}
+
+
 
