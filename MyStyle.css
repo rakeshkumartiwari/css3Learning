@@ -132,5 +132,24 @@ color:white;
     transform: skew(45deg,10deg);
 }
 
+.box4{
+    width:100px;
+    height:100px;
+    background:#dddddd;
+    margin: 25px;
+    float:left;
+}
+
+@keyframes shockMe{
+    0%{background:red;}
+    25%{background:yellow;box-shadow: 0 0 4px 2px red;}
+    50%{background:blue;box-shadow: 0 0 8px 4px orange}
+    100%{background:green;box-shadow: 0 0 16px 6px yellow}
+
+}
+
+.box4{
+  animation: shockMe 12s infinite alternate;
+}
 
 
