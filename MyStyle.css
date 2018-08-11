@@ -7,9 +7,6 @@ color-stop(0.70,rgb(150, 91, 91)),
 color-stop(0.30,#432100)); */
 }
 .container{
-  
-   
-  
     height: 500px;
     width:100%;
 }
@@ -27,20 +24,21 @@ h4{
     width: 200px;
     background-color: red;
     text-align: center;
-   float: left;
-   margin: 5px;
-   padding: 5px;
-   border-radius: 50%;
+    float: left;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 50%;
   
 }
 
 .box1{
-    transition-property: background-color;
+    transition-property: background-color, border-radius;
     transition-duration:4s;
 }
 
 .box1:hover{
     background-color:blue;
+    border-radius: 0%;
 }
 
 
@@ -58,14 +56,17 @@ h4{
 
 .box2{
 
-    /*This is working.*/
+    /*we can write this way*/
 
     /* transition-property:  border-radius,background-color;
     transition-duration:4s;
     transition-delay:2s,0s; */
 
-      /*This is shorthand*/
-      transition:  border-radius 2s 1s,background-color 2s 1s;
+    /*we can write this way*/
+      /* transition:  border-radius 2s 1s,background-color 2s 1s; */
+
+    /*we can write this way*/
+      transition: all 2s;
 
 }
 
@@ -188,5 +189,22 @@ color:white;
 
 .box5{
     animation: shockMe 12s  infinite alternate;
+}
+
+.box6{
+    width:100px;
+    height:100px;
+    background:#dddddd;
+    margin: 25px;
+}
+
+.box6:hover{
+    background:yellow;
+    width:200px;
+    border-radius: 50%;
+}
+
+.box6{
+    transition: all 5s;
 }
 
