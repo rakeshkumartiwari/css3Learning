@@ -6,10 +6,30 @@ font-family: Arial, Helvetica, sans-serif;
 color-stop(0.70,rgb(150, 91, 91)),
 color-stop(0.30,#432100)); */
 }
-.container{
+.container1{
+    display:flex;
     height: 500px;
     width:100%;
+    background:lightslategray;
 }
+.container1>div{
+margin:5px;
+padding: 5px;
+}
+
+.container2{
+    display:flex;
+    flex-flow: row wrap;
+    height: 500px;
+    width:100%;
+    background:lightslategray;
+}
+.container2>div{
+margin:5px;
+padding: 5px;
+}
+
+
 h1{
     background-color: black;
     color: rgb(166, 220, 228);
@@ -24,7 +44,7 @@ h4{
     width: 200px;
     background-color: red;
     text-align: center;
-    float: left;
+   
     margin: 5px;
     padding: 5px;
     border-radius: 50%;
@@ -48,7 +68,7 @@ h4{
     width: 200px;
     background-color:green;
     text-align: center;
-    float: left;
+   
     margin: 5px;
     padding: 5px;
     box-shadow: 2px 2px 2px 0.1em rgb(69, 70, 170);
@@ -77,7 +97,7 @@ h4{
 
 
 .box3{
-    float: left;
+  
     margin: 5px;
     padding: 5px;
     width: 500px;
@@ -138,7 +158,7 @@ color:white;
     height:100px;
     background:#dddddd;
     margin: 25px;
-    float:left;
+   
 }
 
 @keyframes blushing{
@@ -162,7 +182,7 @@ color:white;
     height:100px;
     background:#dddddd;
     margin: 25px;
-    float:left;
+   
 }
 
 @keyframes shockMe{
@@ -192,10 +212,12 @@ color:white;
 }
 
 .box6{
+    
     width:100px;
     height:100px;
     background:#dddddd;
     margin: 25px;
+    
 }
 
 .box6:hover{
@@ -206,5 +228,50 @@ color:white;
 
 .box6{
     transition: all 2s;
+}
+
+.box7 h2{
+    -webkit-text-stroke: 1px black;
+    color:white;
+}
+
+.box7{
+    width:500px;
+    height:500px;
+    margin:25px;
+    background:
+    url(Images/1.jpg) 150px 30px no-repeat,
+    url(Images/2.png) -2em 0 no-repeat,
+    url(Images/3.jpg) 0 150px no-repeat;
+    
+}
+
+
+/* .container3 {
+   display: table;
+}
+
+#nav,#article,#aside{
+display:table-cell;
+
+} */
+
+.container3 > ul{
+    list-style: none;
+    display: flex;
+   
+}
+
+.container3 >ul li{
+    margin: 10px;
+}
+
+.container4 > div:hover{
+transform:translate(1600px) ;
+
+}
+
+.container4 > div{
+    transition: transform 3s ease-in;
 }
 
