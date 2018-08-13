@@ -275,3 +275,75 @@ transform:translate(1600px) ;
     transition: transform 3s ease-in;
 }
 
+.container5{
+    height: 220px;
+    width:220px;
+    position: relative;
+    perspective: 600px;
+    border:1px solid black;
+}
+
+.container5 div{
+    height: 100%;
+    width:100%;
+    position: absolute;
+    transform-style:preserve-3d;
+    transition: transform 2s; 
+}
+
+.rotate{
+    background:hsla(240, 70%, 50%, 0.6);
+}
+
+.rotate:hover{
+transform: rotate3d(1,1,1,360deg)
+}
+
+.container6{
+    position: relative;
+    height: 220px;
+    width: 220px;
+    perspective: 1000px;
+
+}
+.picture{
+    height:100%;
+    width:100%;
+    transform-style: preserve-3d;
+    transition:all 1s linear;
+}
+
+.front{
+position: absolute;
+height: 100%;
+width: 100%;
+z-index: 2;
+backface-visibility: hidden;
+transform: rotateY(0deg);
+
+}
+
+.front img{
+    height: 100%;
+    width: 100%;
+}
+
+.back{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    color: white;
+    background:#aaa;
+   text-align: center;
+    transform: rotateY(180deg);
+    
+    }
+
+    .container6:hover .picture{
+        transform: rotateX(180deg);
+    }
+
+    .back{
+        transform: rotateZ(180deg) rotateY(180deg);
+    }
